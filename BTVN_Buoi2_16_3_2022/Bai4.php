@@ -1,14 +1,13 @@
-
-
 <?php
-$n = 3;
+$n = 4;
 $total = 0;
 $multiply = 1;
-for($i = 1;$i<=$n;$i++){
+$i = 1;
+while ($i<=$n){
     $multiply *=$i;
     $total+=$multiply;
+    $i++;
 }
 
 echo "ANS = ".$total;
-
 ?>
