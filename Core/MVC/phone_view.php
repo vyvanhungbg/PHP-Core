@@ -16,10 +16,16 @@
             <td>Tên</td>
             <td>Giá</td>
         </tr>
+
         <tr>
             <td><?php echo $phone['name']?></td>
             <td><?php echo $phone['price']?></td>
         </tr>
+
+
+
     </table>
+
+<a href="controller.php"> Quay lại </a>
 </body>
 </html>
