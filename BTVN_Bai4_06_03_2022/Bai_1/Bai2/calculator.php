@@ -8,19 +8,20 @@
     <title>Document</title>
 </head>
 <body>
+
 <?php
-if(isset($_POST["n_number"])){
-    $n = $_POST["n_number"];
-    $sum = 0;
-    $tmp = 1;
-    for($i=1;$i<=$n;$i++){
-        $tmp*=$i;
-        $sum+=$tmp;
+if(isset($_POST['cal_box'])){
+    try {
+        $res =0;
+        eval('$res = ' .$_POST['cal_box'].';');
+        echo $res;
+    }catch (Exception $e){
+        echo "Lỗi phép tính !. Vui lòng nhập lại ";
     }
-    echo "Kết quả là : {$sum}";
 }
 ?>
+
 <br>
-<a href="../">Quay lại </a>
+<a href="Bai2.php">Quay lại </a>
 </body>
 </html>

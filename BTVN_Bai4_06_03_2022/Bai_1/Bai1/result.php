@@ -9,18 +9,20 @@
 </head>
 <body>
 <?php
-if(isset($_POST["n_number"])){
-    $n = $_POST["n_number"];
+session_start();
+if(isset($_SESSION["n"])){
+    $n = $_SESSION["n"];
     $sum = 0;
     $tmp = 1;
     for($i=1;$i<=$n;$i++){
         $tmp*=$i;
         $sum+=$tmp;
     }
-    echo "Kết quả là : {$sum}";
+
+    echo "Với n = ".$n." Kết quả là : {$sum}";
 }
 ?>
 <br>
-<a href="../">Quay lại </a>
+<a href="../main/menu.php">Quay lại </a>
 </body>
 </html>

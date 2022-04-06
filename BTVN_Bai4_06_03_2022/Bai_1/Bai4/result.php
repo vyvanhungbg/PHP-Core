@@ -9,18 +9,22 @@
 </head>
 <body>
 <?php
-if(isset($_POST["n_number"])){
-    $n = $_POST["n_number"];
-    $sum = 0;
-    $tmp = 1;
-    for($i=1;$i<=$n;$i++){
-        $tmp*=$i;
-        $sum+=$tmp;
+session_start();
+if(isset($_SESSION["n"])){
+    $n = $_SESSION["n"];
+    $total = 0;
+    $multiply = 1;
+    $i = 1;
+    while ($i<=$n){
+        $multiply *=$i;
+        $total+=$multiply;
+        $i++;
     }
-    echo "Kết quả là : {$sum}";
+
+    echo "Với n = ".$n."ANS = ".$total;
 }
 ?>
 <br>
-<a href="../">Quay lại </a>
+<a href="../main/menu.php">Quay lại </a>
 </body>
 </html>
