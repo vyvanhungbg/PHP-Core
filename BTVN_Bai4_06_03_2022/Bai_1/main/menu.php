@@ -9,6 +9,8 @@ if(isset($_POST['n_number']) && $_POST['n_number']!=null){
         die("n Không tồn tại ! Nhập lại n");
     }
 }
+
+
 ?>
 <ul>
     <li><a href='../main/index.php'>Nhập lại n</a></li>
