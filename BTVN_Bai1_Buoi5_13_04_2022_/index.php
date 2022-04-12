@@ -71,7 +71,7 @@
         </tr>
 
         <tr>
-            <td colspan= "2" align="center" ><input type="submit" value="Create Acccount and Continue"></td>
+            <td colspan= "2" align="center" ><input type="submit" name="submit" value="Create Acccount and Continue"></td>
         </tr>
     </table>
 </form>
